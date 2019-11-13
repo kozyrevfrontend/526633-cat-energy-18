@@ -1,0 +1,18 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__img {
+  fill: $link-color-gray;
+}
+
+.social__link:hover .social__img {
+  fill: $button-green;
+}
+
+.social__link:active .social__img {
+  opacity: 0.3;
+}

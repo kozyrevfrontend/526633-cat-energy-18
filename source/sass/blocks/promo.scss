@@ -1,0 +1,17 @@
+.promo {
+  box-sizing: border-box;
+  min-height: 370px; /*временно чтобы увидеть background-image*/
+
+  background-image: url('../../img/index-can-mobile@1x.png'),
+                    url('../../img/index-background-mobile@1x.jpg');
+  background-repeat: no-repeat;
+}
+
+.promo__slogan {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $font-color-light;
+}
