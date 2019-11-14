@@ -1,0 +1,42 @@
+.selection {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $font-color-headers-additional;
+}
+
+.selection__legend {
+  font-size: 24px;
+  line-height: 24px;
+  color: $font-color-headers;
+  text-transform: none;
+}
+
+.selection__proposal {
+  font-size: 14px;
+}
+
+.selection__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.selection__text-input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $font-color-base;
+}
+
+.selection__notify-text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+  color: $font-color-base;
+}
