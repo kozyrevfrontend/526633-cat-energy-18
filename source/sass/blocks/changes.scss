@@ -1,0 +1,59 @@
+.changes {
+  background-color: $background-color-gray;
+}
+
+.changes__header {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: $font-color-headers;
+}
+
+.changes__stats-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.changes__stats-value {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $font-color-headers;
+}
+
+.changes__stats-feature {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.changes__cost {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $font-color-headers;
+}
+
+.changes__toggle {
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $font-color-headers;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px solid $border-color-gray;
+  }
+}
