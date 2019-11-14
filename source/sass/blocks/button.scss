@@ -1,0 +1,48 @@
+.button {
+  display: inline-flex;
+
+  box-sizing: border-box;
+  width: 280px;
+  height: 40px;
+  padding: 0;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $font-color-light;
+  text-transform: uppercase;
+  vertical-align: top;
+
+  background-color: $button-green;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-green-hover;
+  }
+
+  &:active .button__text {
+    opacity: 0.3;
+  }
+
+  &--light {
+    color: $font-color-base;
+
+    background-color: $button-gray;
+
+    &:hover {
+      background-color: $button-gray-hover;
+    }
+  }
+
+  &--index {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.button__text {
+  margin: auto;
+}
