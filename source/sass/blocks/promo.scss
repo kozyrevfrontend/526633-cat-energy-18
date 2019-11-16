@@ -1,17 +1,86 @@
 .promo {
   box-sizing: border-box;
   min-height: 370px; /*временно чтобы увидеть background-image*/
+  width: auto;
+  margin-top: -100px;
+  margin-bottom: 22px;
+  padding-top: 125px;
 
   background-image: url("../../img/index-can-mobile@1x.png"),
     url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 167px, 50% 0;
+}
+
+.promo__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .promo__slogan {
+  margin: 0;
+  margin-bottom: 301px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
   color: $font-color-light;
+
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    margin-top: 0;
+    min-height: 690px;
+    padding-top: 40px;
+    margin-bottom: 0;
+
+    background-image: url("../../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 80px;
+  }
+
+  .promo__wrapper {
+    box-sizing: border-box;
+    width: 708px;
+    padding-left: 87px;
+  }
+
+  .promo__slogan {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $font-color-headers;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    min-height: 696px;
+    margin-top: -342px;
+    margin-bottom: 80px;
+    padding-top: 383px;
+
+    background-image: url("../../img/index-can-desktop@1x.png"),
+      url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 560px 142px, 710px 0;
+  }
+
+  .promo__wrapper {
+    width: 1220px;
+    padding-left: 80px;
+  }
+
+  .promo__slogan {
+    margin-bottom: 53px;
+  }
 }

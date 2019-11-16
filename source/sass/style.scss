@@ -1,8 +1,10 @@
 @import "variables.scss";
 @import "fonts.scss";
-@import "global.scss";
+@import "scaffolding.scss";
 @import "visually-hidden";
 @import "blocks/button.scss";
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
 @import "blocks/site-list.scss";
 @import "blocks/page-main.scss";
 @import "blocks/promo.scss";
@@ -20,3 +22,4 @@
 @import "blocks/product-additional.scss";
 @import "blocks/promo-gift.scss";
 @import "blocks/selection.scss";
+@import "outlines.scss";

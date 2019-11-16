@@ -1,0 +1,20 @@
+.logo {
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 66px;
+  padding-top: 11px;
+
+  vertical-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    min-height: 82px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    min-height: 113px;
+  }
+}

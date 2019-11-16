@@ -1,3 +1,8 @@
+.programs {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .programs__list {
   margin: 0;
   padding: 0;
@@ -6,10 +11,16 @@
 }
 
 .programs__item {
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
+
   background-color: $background-color-gray;
 }
 
 .programs__title {
+  margin: 0;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;

@@ -1,14 +1,45 @@
 .site-list {
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 
+  // Временно для сетки
+  min-height: 198px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   list-style: none;
+
+  &--index {
+    font-weight: 500;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 440px;
+    min-height: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 480px;
+    min-height: auto;
+  }
+}
+
+.site-list__item {
+  min-height: 66px;
 }
 
 .site-list__link {

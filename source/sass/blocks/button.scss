@@ -46,3 +46,12 @@
 .button__text {
   margin: auto;
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 245px;
+    height: 52px;
+
+    font-size: 20px;
+  }
+}
