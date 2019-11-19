@@ -1,5 +1,4 @@
 .promo {
-  box-sizing: border-box;
   min-height: 370px; /*временно чтобы увидеть background-image*/
   width: auto;
   margin-top: -100px;
@@ -44,7 +43,6 @@
   }
 
   .promo__wrapper {
-    box-sizing: border-box;
     width: 708px;
     padding-left: 87px;
   }
