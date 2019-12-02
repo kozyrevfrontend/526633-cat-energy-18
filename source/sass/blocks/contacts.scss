@@ -2,7 +2,18 @@
   background-color: $font-color-light;
 }
 
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  padding-top: 28px;
+}
+
 .contacts__offer {
+  width: 140px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -12,5 +23,8 @@
 }
 
 .contacts__address {
+  width: 140px;
+  margin: 0;
+
   line-height: 20px;
 }

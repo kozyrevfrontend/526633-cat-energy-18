@@ -3,6 +3,16 @@
 }
 
 .page-footer__logo-link {
+  display: block;
+  width: 280px;
+  height: 95px;
+  margin: 0 auto;
+  padding-top: 39px;
+
+  text-align: center;
+
+  border-bottom: 1px solid $border-color-light-gray;
+
   &:hover {
     opacity: 0.8;
   }

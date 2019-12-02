@@ -1,8 +1,21 @@
-.social__list {
-  margin: 0;
-  padding: 0;
+.social {
+  width: 280px;
+  margin: 0 auto;
 
-  list-style: none;
+  border-bottom: 1px solid $border-color-light-gray;
+}
+
+.social__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 125px;
+  min-height: 62px;
+  margin-left: 74px;
+  margin-right: 82px;
+  padding-top: 24px;
 }
 
 .social__img {

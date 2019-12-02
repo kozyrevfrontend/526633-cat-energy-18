@@ -1,10 +1,21 @@
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+
   font-size: 16px;
   line-height: 16px;
   color: $font-color-base;
 }
 
+.copyright__link-text {
+  margin-top: 30px;
+}
+
 .copyright__img {
+  margin-top: 10px;
+
   fill: $link-color-gray;
 }
 
