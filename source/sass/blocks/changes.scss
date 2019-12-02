@@ -1,9 +1,17 @@
 .changes {
+  padding-top: 17px;
+
   background-color: $background-color-gray;
+}
+
+.changes__container {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .changes__header {
   margin: 0;
+  margin-bottom: 23px;
   padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
@@ -12,13 +20,33 @@
   color: $font-color-headers;
 }
 
+.changes__description {
+  width: 270px;
+  margin-bottom: 25px;
+}
+
 .changes__stats-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
+  margin-bottom: 34px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.changes__stats-item {
+  width: 124px;
+  height: 56px;
+  padding-top: 13px;
+
+  text-align: center;
+
+  border: 1px solid $border-color-mid-gray;
+  border-radius: 3px;
 }
 
 .changes__stats-value {
+  margin: 0;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -28,17 +56,73 @@
 }
 
 .changes__stats-feature {
+  width: 87px;
+  margin: 0 auto;
+  margin-top: 9px;
+
   font-size: 12px;
   line-height: 12px;
+  text-transform: lowercase;
+
+  background-color: $background-color-gray;
 }
 
 .changes__cost {
+  margin: 0;
+  margin-bottom: 37px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: $font-color-headers;
+}
+
+.changes__img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 29px;
+}
+
+.changes__toggle-wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 36px;
+  padding-left: 39px;
+  padding-right: 39px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 99px;
+
+    width: 84px;
+    height: 14px;
+
+    border: 1px solid $border-color-mid-gray;
+    border-radius: 6px;
+    background-color: $font-color-light;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 105px;
+
+    width: 35px;
+    height: 6px;
+
+    border-radius: 3px;
+    background-color: $button-green;
+  }
 }
 
 .changes__toggle {
@@ -52,6 +136,10 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  &:first-child {
+    margin-left: 5px;
+  }
 
   &:hover {
     border-bottom: 1px solid $border-color-gray;
