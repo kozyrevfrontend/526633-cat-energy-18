@@ -34,7 +34,7 @@
   text-transform: uppercase;
   color: $font-color-headers;
 
-  &--slim::before {
+  &::before {
     content: "";
 
     position: absolute;
@@ -62,21 +62,6 @@
 
     background-image: url(../../img/icon-cat-slim.svg);
     background-repeat: no-repeat;
-  }
-
-  &--pro::before {
-    content: "";
-
-    position: absolute;
-    top: -6px;
-    left: -69px;
-
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-
-    background-color: $button-green;
   }
 
   &--pro::after {
@@ -149,6 +134,101 @@
     margin-bottom: 30px;
     padding-right: 53px;
     padding-left: 53px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    margin: 0;
+    margin-top: 46px;
+    margin-bottom: 25px;
+
+    &::before {
+      top: 16px;
+      left: 393px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &--pro::before {
+      top: 15px;
+      left: 395px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &--slim::after {
+      top: 4px;
+      left: 423px;
+
+      width: 140px;
+      height: 194px;
+
+      background-image: url(../../img/icon-cat-slim.svg);
+      background-repeat: no-repeat;
+    }
+
+    &--pro::after {
+      top: 59px;
+      left: 359px;
+
+      width: 268px;
+      height: 112px;
+
+      background-image: url(../../img/icon-cat-pro.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  .programs__description{
+    width: 374px;
+    margin: 0;
+    padding-bottom: 56px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border: none;
+
+    &--pro {
+      width: 341px;
+    }
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 20px;
+
+    &--slim::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 131px;
+    }
+
+    &--slim:hover::after {
+      width: 33px;
+
+      background-image: url(../../img/icon-right-arrow-verylong.svg);
+    }
+
+    &--pro::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 125px;
+    }
+
+    &--pro:hover::after {
+      width: 33px;
+
+      background-image: url(../../img/icon-right-arrow-verylong.svg);
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

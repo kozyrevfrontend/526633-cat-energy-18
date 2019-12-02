@@ -17,8 +17,17 @@
     display: flex;
     justify-content: space-between;
     width: $tablet-width;
+    min-height: 82px;
+    padding-top: 24px;
     padding-right: 30px;
     padding-left: 30px;
+
+    border: none;
+  }
+
+  .page-header__logo-link {
+    margin: 0;
+    padding: 0;
   }
 }
 

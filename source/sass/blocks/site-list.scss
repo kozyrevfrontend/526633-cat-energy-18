@@ -31,9 +31,48 @@
 @media (min-width: $tablet-width) {
   .site-list {
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     min-width: 440px;
     min-height: auto;
+
+    font-size: 18px;
+    line-height: 26px;
+
+    &--index {
+      font-weight: 400;
+    }
+  }
+
+  .site-list__item {
+    min-height: auto;
+    padding-top: 17px;
+
+    border: none;
+  }
+
+  .site-list__link {
+    position: relative;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--active::before {
+      content: "";
+      position: absolute;
+      top: 33px;
+      left: 0;
+
+      width: 100%;
+      height: 2px;
+
+      background-color: $button-green;
+    }
   }
 }
 

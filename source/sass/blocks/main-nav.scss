@@ -66,3 +66,14 @@
 .main-nav--nojs .main-nav__toggle {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav--nojs,
+  .main-nav--closed .site-list__item {
+    display: block;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
