@@ -28,3 +28,34 @@
 
   line-height: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    min-height: 175px;
+    width: 708px;
+    padding-top: 0;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+
+  .contacts__address {
+    width: 155px;
+    margin-top: 64px;
+
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .contacts__address span {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .contacts__offer {
+    width: 160px;
+    margin-top: 65px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+}

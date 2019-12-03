@@ -29,3 +29,45 @@
 .social__link:active .social__img {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 324px;
+  }
+
+  .social__list {
+    margin-left: 80px;
+    padding-top: 0;
+  }
+
+  .social__item {
+    &--vk {
+      padding-top: 66px;
+    }
+
+    &--insta {
+      padding-top: 63px;
+    }
+
+    &--fb {
+      padding-top: 60px;
+    }
+  }
+
+  .social__img {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
+}

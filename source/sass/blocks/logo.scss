@@ -6,7 +6,16 @@
 
 @media (min-width: $tablet-width) {
   .logo {
-    min-height: auto;
+    width: 173px;
+    height: 58px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
 

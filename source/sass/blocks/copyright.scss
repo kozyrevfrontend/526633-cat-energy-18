@@ -26,3 +26,17 @@
 .copyright__link:active {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright__link{
+    width: 162px;
+  }
+
+  .copyright__link-text {
+    margin-top: 66px;
+  }
+
+  .copyright__img {
+    margin-top: 66px;
+  }
+}
