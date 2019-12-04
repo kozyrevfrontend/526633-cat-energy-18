@@ -255,20 +255,20 @@
       background-color: $button-green;
 
       box-shadow: 0 0 0 12px $font-color-light,
-      0 0 0 14px $border-color-mid-gray,
-      0 2px 5px 14px rgba($color: #000000, $alpha: 0.15);
+        0 0 0 14px $border-color-mid-gray,
+        0 2px 5px 14px rgba($color: #000000, $alpha: 0.15);
     }
 
     &:hover::after {
       box-shadow: 0 0 0 12px $font-color-light,
-      0 0 0 14px $border-color-mid-gray,
-      0 3px 5px 14px rgba($color: #000000, $alpha: 0.25);
+        0 0 0 14px $border-color-mid-gray,
+        0 3px 5px 14px rgba($color: #000000, $alpha: 0.25);
     }
 
     &:active::after {
       box-shadow: 0 0 0 12px $font-color-light,
-      0 0 0 14px $button-green,
-      0 4px 5px 14px rgba($color: #000000, $alpha: 0.30);
+        0 0 0 14px $button-green,
+        0 4px 5px 14px rgba($color: #000000, $alpha: 0.3);
     }
   }
 
@@ -286,5 +286,80 @@
     &:active {
       border-bottom: none;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .changes {
+    background-color: $background-color-gray;
+  }
+
+  .changes__wrapper {
+    display: flex;
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .changes__container {
+    width: 570px;
+    margin: 0;
+  }
+
+  .changes__header {
+    margin-top: -148px;
+    margin-bottom: 147px;
+  }
+
+  .changes__description {
+    width: 435px;
+    margin-bottom: 67px;
+  }
+
+  .changes__stats-container {
+    flex-direction: column;
+  }
+
+  .changes__stats-list {
+    margin-bottom: 55px;
+  }
+
+  .changes__stats-feature {
+    background-color: $background-color-gray;
+  }
+
+  .changes__cost {
+    width: 328px;
+    margin-left: 0;
+    padding-top: 0;
+
+    text-align: left;
+  }
+
+  .changes__cost-value {
+    display: inline-block;
+    margin-left: 59px;
+
+    vertical-align: top;
+  }
+
+  .changes__slider {
+    width: 690px;
+    min-height: 448px;
+    margin-left: auto;
+
+    background-color: transparent;
+  }
+
+  .changes__img {
+    position: static;
+    margin-bottom: 37px;
+    margin-top: -200px;
+    margin-left: 39px;
+  }
+
+  .changes__toggle-wrapper {
+    margin-top: 0;
+    margin-left: 50px;
   }
 }

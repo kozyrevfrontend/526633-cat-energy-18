@@ -205,3 +205,26 @@
     line-height: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    margin-bottom: 128px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .advantages__container {
+    width: 1220px;
+  }
+
+  .advantages__header {
+    padding-top: 20px;
+    margin-bottom: 72px;
+  }
+
+  .advantages__item {
+    width: 245px;
+  }
+}

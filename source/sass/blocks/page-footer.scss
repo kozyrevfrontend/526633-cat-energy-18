@@ -42,3 +42,13 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__container {
+    width: 1220px;
+  }
+
+  .page-footer__logo-link {
+    width: 245px;
+  }
+}

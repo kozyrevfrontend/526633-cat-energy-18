@@ -33,10 +33,20 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    display: flex;
-    justify-content: space-between;
-    width: $desktop-width;
-    padding-right: 40px;
-    padding-left: 40px;
+    width: 1220px;
+    min-height: 113px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 110px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  .page-header__logo-link {
+    position: relative;
+
+    margin-top: 54px;
+    padding-left: 0;
   }
 }

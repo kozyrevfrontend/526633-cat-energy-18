@@ -249,4 +249,45 @@
     padding-right: 53px;
     padding-left: 53px;
   }
+
+  .programs__title {
+    margin-left: 161px;
+    margin-bottom: 75px;
+
+    &::before {
+      top: -29px;
+      left: -162px;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::after {
+      top: -35px;
+      left: -148px;
+
+      width: 70px;
+      height: 97px;
+
+      background-image: url(../../img/icon-cat-slim.svg);
+      background-repeat: no-repeat;
+    }
+
+    &--pro::after {
+      top: -7px;
+      left: -180px;
+
+      width: 134px;
+      height: 56px;
+
+      background-image: url(../../img/icon-cat-pro.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  .programs__description {
+    width: 465px;
+    margin-bottom: 30px;
+    padding-bottom: 0;
+  }
 }

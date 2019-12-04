@@ -71,3 +71,13 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social {
+    width: 570px;
+  }
+
+  .social__list {
+    margin-left: 132px;
+  }
+}
