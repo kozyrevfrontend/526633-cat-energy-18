@@ -1,4 +1,12 @@
+.product-additional {
+  min-height: 129px;
+  padding-top: 13px;
+}
+
 .product-additional__title {
+  margin: 0;
+  margin-bottom: 12px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -8,5 +16,14 @@
 }
 
 .product-additional__stats {
+  width: 280px;
+  margin-bottom: 14px;
+
   line-height: 14px;
+
+  border-collapse: collapse;
+}
+
+.product-additional__stats-data--value {
+  text-align: right;
 }
