@@ -56,3 +56,56 @@
   font-size: 12px;
   font-weight: inherit;
 }
+
+@media (min-width: $tablet-width) {
+  .all-goods {
+    min-height: 432px;
+    padding-top: 163px;
+  }
+
+  .all-goods__container {
+    width: 322px;
+  }
+
+  .all-goods__title {
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 26px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      top: -80px;
+      left: 41px;
+
+      width: 60px;
+    }
+
+    &::after {
+      top: -109px;
+      left: 70px;
+
+      height: 60px;
+    }
+  }
+
+  .all-goods__text {
+    display: block;
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 86px;
+
+    font-size: 16px;
+  }
+
+  .all-goods__link {
+    width: 249px;
+    height: 40px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

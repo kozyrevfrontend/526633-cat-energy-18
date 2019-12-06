@@ -24,20 +24,25 @@
 
 @media (min-width: $tablet-width) {
   .page-main__header {
-    width: 516px;
+    width: 708px;
     margin: 0;
-    padding-left: 87px;
+    padding-top: 46px;
 
     font-size: 60px;
     line-height: 60px;
     text-align: left;
     color: $font-color-headers;
+
+    &--index {
+      width: 516px;
+      padding-left: 87px;
+      padding-top: 46px;
+    }
   }
 
   .page-main__header-wrapper {
     width: 708px;
     margin: 0 auto;
-    margin-top: 46px;
   }
 }
 
