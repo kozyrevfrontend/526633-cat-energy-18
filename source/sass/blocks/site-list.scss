@@ -81,6 +81,12 @@
     min-width: 480px;
   }
 
+  .site-list__link {
+    &--active::before {
+      top: 36px;
+    }
+  }
+
   .site-list--index {
     .site-list__link {
       color: $font-color-light;

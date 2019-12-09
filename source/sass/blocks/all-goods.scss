@@ -109,3 +109,13 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .all-goods__container {
+    width: 243px;
+  }
+
+  .all-goods__link {
+    width: 169px;
+  }
+}

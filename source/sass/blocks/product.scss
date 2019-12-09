@@ -130,6 +130,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .product__container {
+    width: 245px;
+  }
+
+  .product__stats {
+    width: 169px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .product__img--small {
     width: 245px;
     height: 172px;
@@ -138,6 +148,10 @@
   .product__img--big {
     width: 245px;
     height: 208px;
+  }
+
+  .product__link {
+    width: 169px;
   }
 }
 

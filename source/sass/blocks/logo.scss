@@ -6,7 +6,8 @@
 
 @media (min-width: $tablet-width) {
   .logo {
-    height: 58px;
+    width: 173px;
+    height: 56px;
 
     &:hover {
       opacity: 0.8;
@@ -20,6 +21,7 @@
 
 @media (min-width: $desktop-width) {
   .logo {
+    width: 202px;
     height: 59px;
     margin-bottom: 0;
   }
