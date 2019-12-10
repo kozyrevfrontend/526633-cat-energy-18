@@ -1,0 +1,28 @@
+.logo {
+  display: inline-block;
+
+  vertical-align: top;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    width: 173px;
+    height: 56px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 202px;
+    height: 59px;
+    margin-bottom: 0;
+  }
+}

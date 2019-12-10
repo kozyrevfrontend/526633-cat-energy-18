@@ -1,7 +1,6 @@
 .button {
   display: inline-flex;
 
-  box-sizing: border-box;
   width: 280px;
   height: 40px;
   padding: 0;
@@ -45,4 +44,13 @@
 
 .button__text {
   margin: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 245px;
+    height: 52px;
+
+    font-size: 20px;
+  }
 }

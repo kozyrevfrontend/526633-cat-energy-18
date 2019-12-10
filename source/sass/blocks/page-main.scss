@@ -1,12 +1,70 @@
 .page-main__header {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  padding-top: 15px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
   color: $font-color-headers;
+  text-align: left;
 
   &--index {
+    margin-top: 28px;
+    margin-bottom: 0;
+    padding-top: 0;
+
     line-height: 36px;
     color: $font-color-light;
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__header {
+    width: 708px;
+    margin: 0;
+    padding-top: 48px;
+
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $font-color-headers;
+
+    &--index {
+      width: 516px;
+      padding-left: 87px;
+    }
+  }
+
+  .page-main__header-wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__header {
+    padding-top: 0;
+
+    &--index {
+      padding-top: 34px;
+      padding-left: 80px;
+    }
+  }
+
+  .page-main__header-wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .page-main__container {
+    display: flex;
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
   }
 }

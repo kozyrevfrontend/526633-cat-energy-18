@@ -3,11 +3,52 @@
 }
 
 .page-footer__logo-link {
+  display: block;
+  width: 280px;
+  height: 95px;
+  margin: 0 auto;
+  padding-top: 39px;
+
+  text-align: center;
+
+  border-bottom: 1px solid $border-color-light-gray;
+
   &:hover {
     opacity: 0.8;
   }
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+    min-height: 150px;
+    margin: 0 auto;
+  }
+
+  .page-footer__logo-link {
+    width: 162px;
+    height: auto;
+    margin-left: 0;
+    padding-top: 65px;
+
+    text-align: left;
+
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__container {
+    width: 1220px;
+  }
+
+  .page-footer__logo-link {
+    width: 245px;
   }
 }

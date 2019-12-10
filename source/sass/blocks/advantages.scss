@@ -1,4 +1,14 @@
+.advantages {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 46px;
+}
+
 .advantages__header {
+  margin: 0;
+  margin-top: -3px;
+  margin-bottom: 30px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
@@ -7,8 +17,214 @@
 }
 
 .advantages__list {
-  margin: 0;
-  padding: 0;
+  @include list-reset;
+}
 
-  list-style: none;
+.advantages__item {
+  position: relative;
+
+  margin-bottom: 26px;
+  padding-left: 80px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $button-green;
+  }
+
+  &--leaf::before {
+    background-image: url("../../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+  }
+
+  &--powder::before {
+    background-image: url("../../img/advantage-powder@1x.png");
+    background-repeat: no-repeat;
+    background-position: 5px 4px;
+  }
+
+  &--dining::before {
+    background-image: url("../../img/advantage-dining@1x.png");
+    background-repeat: no-repeat;
+    background-position: 4px 5px;
+  }
+
+  &--clock::before {
+    background-image: url("../../img/advantage-clock@1x.png");
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    position: relative;
+
+    width: 100%;
+    margin-bottom: 0;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: $border-color-light;
+    }
+  }
+
+  .advantages__container {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 324px;
+    min-height: 228px;
+    padding: 0;
+    margin-bottom: 89px;
+
+    &::before {
+      top: 0;
+      left: 0;
+
+      width: 80px;
+      height: 80px;
+    }
+
+    &--leaf::before {
+      background-position: 15px 15px;
+    }
+
+    &--leaf::after {
+      content: "1";
+
+      position: absolute;
+      top: -39px;
+      left: 118px;
+      z-index: -1;
+
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281px;
+      color: $button-gray;
+    }
+
+    &--powder::before {
+      background-position: 15px 15px;
+    }
+
+    &--powder::after {
+      content: "2";
+
+      position: absolute;
+      top: -39px;
+      left: 111px;
+      z-index: -1;
+
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281px;
+      color: $button-gray;
+    }
+
+    &--dining::before {
+      background-position: 15px 15px;
+    }
+
+    &--dining::after {
+      content: "3";
+
+      position: absolute;
+      top: -39px;
+      left: 113px;
+      z-index: -1;
+
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281px;
+      color: $button-gray;
+    }
+
+    &--clock::before {
+      background-position: 15px 15px;
+    }
+
+    &--clock::after {
+      content: "4";
+
+      position: absolute;
+      top: -39px;
+      left: 113px;
+      z-index: -1;
+
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281px;
+      color: $button-gray;
+    }
+  }
+
+  .advantages__description {
+    width: 245px;
+    margin: 0;
+    margin-top: 112px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .advantages__header {
+    margin: 0;
+    margin-bottom: 71px;
+    padding-top: 16px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    margin-bottom: 128px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .advantages__container {
+    width: 1220px;
+  }
+
+  .advantages__header {
+    padding-top: 20px;
+    margin-bottom: 72px;
+  }
+
+  .advantages__item {
+    width: 245px;
+  }
 }

@@ -1,0 +1,52 @@
+.page-header {
+  width: 320px;
+  min-height: 66px;
+  margin: 0 auto;
+
+  border-bottom: 1px solid $border-color-light;
+}
+
+.page-header__logo-link {
+  margin-top: 11px;
+  margin-bottom: 12px;
+  padding-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    width: $tablet-width;
+    min-height: 82px;
+    padding-top: 24px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    border: none;
+  }
+
+  .page-header__logo-link {
+    margin-top: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1220px;
+    min-height: 113px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 76px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  .page-header__logo-link {
+    position: relative;
+
+    margin-top: 54px;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,54 @@
+.map {
+  position: relative;
+}
+
+.map__img {
+  position: relative;
+
+  display: block;
+  height: 362px;
+  margin: 0 auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    width: 62px;
+    height: 53px;
+
+    background-image: url("../../img/map-pin.png");
+    background-repeat: no-repeat;
+  } /*Псевдоэлемент не работает, почему не понятно */
+}
+
+.map__iframe {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 362px;
+
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .map__img {
+    height: 396px;
+  }
+
+  .map__iframe {
+    height: 396px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__img {
+    height: 400px;
+  }
+
+  .map__iframe {
+    height: 400px;
+  }
+}
