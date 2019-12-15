@@ -20,6 +20,10 @@
     color: $font-color-light;
     text-align: center;
   }
+
+  &--form {
+    margin-bottom: 25px;
+  }
 }
 
 @media (min-width: $tablet-width) {
