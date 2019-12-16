@@ -619,3 +619,142 @@
     line-height: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .selection {
+    width: 1220px;
+  }
+
+  .selection__proposal {
+    padding-left: 0;
+    margin-bottom: 66px;
+  }
+
+  .selection__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .selection__fieldset {
+    &--cat {
+      width: 570px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-bottom: 68px;
+    }
+
+    &--programs {
+      width: 570px;
+      margin-right: 0;
+      margin-bottom: 68px;
+    }
+
+    &--owner {
+      width: 1220px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 46px;
+    }
+
+    &--comment {
+      width: 1220px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 39px;
+    }
+
+    &--add {
+      width: 1220px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .selection__legend {
+    &--owner::before {
+      left: -110px;
+
+      width: 70px;
+    }
+
+    &--owner::after {
+      width: 778px;
+    }
+
+    &--comment::before {
+      left: -110px;
+
+      width: 70px;
+    }
+
+    &--comment::after {
+      width: 1112px;
+    }
+
+    &--add::before {
+      left: -110px;
+
+      width: 70px;
+    }
+
+    &--add::after {
+      width: 1078px;
+    }
+  }
+
+  .selection__wrapper {
+    &--owner {
+      width: 570px;
+    }
+  }
+
+  .selection__item {
+    &--programs {
+      padding-left: 87px;
+    }
+
+    &--add {
+      width: 245px;
+      margin-right: 80px;
+    }
+
+    &--add:nth-child(2n+2) {
+      margin-right: 80px;
+    }
+
+    &--add:nth-child(4n+4) {
+      margin-right: 0;
+    }
+  }
+
+  .selection__text-input {
+    &--comment {
+      width: 1220px;
+    }
+  }
+
+  .selection__text-input-icon {
+    &--mail {
+      left: 533px;
+    }
+
+    &--tel {
+      left: 531px;
+    }
+  }
+
+  .selection__submit-wrapper {
+    width: 1220px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 64px;
+  }
+
+  .selection__submit-btn {
+    width: 570px;
+    margin-right: 81px;
+  }
+}

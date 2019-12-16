@@ -11,6 +11,7 @@
     <header class="page-header">
       <a class="page-header__logo-link logo" href="index.html">
         <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="page-header__logo-img logo-image" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="38">
         </picture>
@@ -29,7 +30,7 @@
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
+            <a class="site-list__link site-list__link--active" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -41,60 +42,65 @@
       </div>
       <form class="selection" method="post" action="https://echo.htmlacademy.ru">
         <p class="selection__proposal">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <fieldset class="selection__fieldset selection__fieldset--cat">
-          <legend class="visually-hidden">Информация о коте</legend>
-          <p class="selection__wrapper">
-            <label class="selection__label selection__label--cat-name" for="cat-name">Имя:*</label>
-            <input class="selection__text-input" name="cat-name" id="cat-name" type="text" placeholder="Барсик" required>
-          </p>
-          <p class="selection__wrapper">
-            <label class="selection__label selection__label--cat-weight" for="cat-weight">Вес (кг):*</label>
-            <input class="selection__text-input" name="cat-weight" id="cat-weight" type="text" placeholder="7" required>
-          </p>
-          <p class="selection__wrapper">
-            <label class="selection__label selection__label--cat-age" for="cat-age">Возраст (лет):</label>
-            <input class="selection__text-input" name="cat-age" id="cat-age" type="text" placeholder="7">
-          </p>
-        </fieldset>
 
-        <fieldset class="selection__fieldset selection__fieldset--programs">
-          <legend class="visually-hidden">Программа питания</legend>
-          <ul class="selection__list">
-            <li class="selection__item selection__item--programs">
-              <input class="selection__radio-input visually-hidden" name="program" value="losing-weight" id="losing-weight" type="radio" checked>
-              <label class="selection__label selection__label--radio" for="losing-weight">Похудение</label>
-            </li>
-            <li class="selection__item selection__item--programs">
-              <input class="selection__radio-input visually-hidden" name="program" value="weight-gain" id="weight-gain" type="radio">
-              <label class="selection__label selection__label--radio" for="weight-gain">Набор массы</label>
-            </li>
-            <li class="selection__item selection__item--programs">
-              <input class="selection__radio-input visually-hidden" name="program" value="help-needed" id="help-needed" type="radio">
-              <label class="selection__label selection__label--radio" for="help-needed">Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="selection__container">
+          <fieldset class="selection__fieldset selection__fieldset--cat">
+            <legend class="visually-hidden">Информация о коте</legend>
+            <p class="selection__wrapper">
+              <label class="selection__label selection__label--cat-name" for="cat-name">Имя:*</label>
+              <input class="selection__text-input" name="cat-name" id="cat-name" type="text" placeholder="Барсик" required>
+            </p>
+            <p class="selection__wrapper">
+              <label class="selection__label selection__label--cat-weight" for="cat-weight">Вес (кг):*</label>
+              <input class="selection__text-input" name="cat-weight" id="cat-weight" type="text" placeholder="7" required>
+            </p>
+            <p class="selection__wrapper">
+              <label class="selection__label selection__label--cat-age" for="cat-age">Возраст (лет):</label>
+              <input class="selection__text-input" name="cat-age" id="cat-age" type="text" placeholder="7">
+            </p>
+          </fieldset>
+
+          <fieldset class="selection__fieldset selection__fieldset--programs">
+            <legend class="visually-hidden">Программа питания</legend>
+            <ul class="selection__list">
+              <li class="selection__item selection__item--programs">
+                <input class="selection__radio-input visually-hidden" name="program" value="losing-weight" id="losing-weight" type="radio" checked>
+                <label class="selection__label selection__label--radio" for="losing-weight">Похудение</label>
+              </li>
+              <li class="selection__item selection__item--programs">
+                <input class="selection__radio-input visually-hidden" name="program" value="weight-gain" id="weight-gain" type="radio">
+                <label class="selection__label selection__label--radio" for="weight-gain">Набор массы</label>
+              </li>
+              <li class="selection__item selection__item--programs">
+                <input class="selection__radio-input visually-hidden" name="program" value="help-needed" id="help-needed" type="radio">
+                <label class="selection__label selection__label--radio" for="help-needed">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
         <fieldset class="selection__fieldset selection__fieldset--owner">
           <legend class="selection__legend selection__legend--owner">Контактные данные (владельца кота)</legend>
-          <p class="selection__wrapper">
-            <label class="selection__label selection__label--owner-mail" for="email">E-mail:*</label>
-            <input class="selection__text-input selection__text-input--owner-mail" name="email" id="email" type="email" placeholder="Kuklachev@gmail.com" required>
-            <svg class="selection__text-input-icon selection__text-input-icon--mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background: new 0 0 17 13;" xml:space="preserve" fill="#222222" width="17" height="13">
-              <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
-            </svg>
-          </p>
-          <p class="selection__wrapper">
-            <label class="selection__label selection__label--owner-tel" for="telephone">Телефон:*</label>
-            <input class="selection__text-input selection__text-input--owner-tel" name="telephone" id="telephone" type="tel" placeholder="8 (960) 900-60-90" required>
-            <svg class="selection__text-input-icon selection__text-input-icon--tel" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background: new 0 0 20 20;" xml:space="preserve" fill="#222222" width="20" height="20">
-              <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
-              <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
-              c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
-              C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
-              C7.8,20,8.1,19.7,8.1,19.4z"/>
-            </svg>
-          </p>
+          <div class="selection__container">
+            <p class="selection__wrapper selection__wrapper--owner">
+              <label class="selection__label selection__label--owner-mail" for="email">E-mail:*</label>
+              <input class="selection__text-input selection__text-input--owner-mail" name="email" id="email" type="email" placeholder="Kuklachev@gmail.com" required>
+              <svg class="selection__text-input-icon selection__text-input-icon--mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background: new 0 0 17 13;" xml:space="preserve" fill="#222222" width="17" height="13">
+                <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
+              </svg>
+            </p>
+            <p class="selection__wrapper selection__wrapper--owner">
+              <label class="selection__label selection__label--owner-tel" for="telephone">Телефон:*</label>
+              <input class="selection__text-input selection__text-input--owner-tel" name="telephone" id="telephone" type="tel" placeholder="8 (960) 900-60-90" required>
+              <svg class="selection__text-input-icon selection__text-input-icon--tel" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background: new 0 0 20 20;" xml:space="preserve" fill="#222222" width="20" height="20">
+                <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
+                <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+                c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+                C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+                C7.8,20,8.1,19.7,8.1,19.4z"/>
+              </svg>
+            </p>
+          </div>
         </fieldset>
 
         <fieldset class="selection__fieldset selection__fieldset--comment">
