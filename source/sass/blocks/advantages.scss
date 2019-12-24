@@ -64,6 +64,30 @@
   }
 }
 
+@media (min-resolution: $retina-dppx) {
+  .advantages__item {
+    &--leaf::before {
+      background-image: url("../../img/advantage-leaf@2x.png");
+      background-size: 50px 50px;
+    }
+
+    &--powder::before {
+      background-image: url("../../img/advantage-powder@2x.png");
+      background-size: 50px 50px;
+    }
+
+    &--dining::before {
+      background-image: url("../../img/advantage-dining@2x.png");
+      background-size: 50px 50px;
+    }
+
+    &--clock::before {
+      background-image: url("../../img/advantage-clock@2x.png");
+      background-size: 50px 50px;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .advantages {
     position: relative;
