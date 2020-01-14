@@ -61,7 +61,7 @@
     width: 35px;
     height: 59px;
 
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
   }
 
@@ -76,7 +76,7 @@
     width: 67px;
     height: 28px;
 
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
   }
 }
@@ -107,7 +107,7 @@
     width: 24px;
     height: 11px;
 
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
 
@@ -120,7 +120,7 @@
     width: 24px;
     height: 11px;
 
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
 }
@@ -166,7 +166,7 @@
       width: 140px;
       height: 194px;
 
-      background-image: url("../../img/icon-cat-slim.svg");
+      background-image: url("../img/icon-cat-slim.svg");
       background-repeat: no-repeat;
     }
 
@@ -177,7 +177,7 @@
       width: 268px;
       height: 112px;
 
-      background-image: url("../../img/icon-cat-pro.svg");
+      background-image: url("../img/icon-cat-pro.svg");
       background-repeat: no-repeat;
     }
   }
@@ -211,7 +211,7 @@
     &--slim:hover::after {
       width: 33px;
 
-      background-image: url("../../img/icon-right-arrow-verylong.svg");
+      background-image: url("../img/icon-right-arrow-verylong.svg");
     }
 
     &--pro::after {
@@ -224,7 +224,7 @@
     &--pro:hover::after {
       width: 33px;
 
-      background-image: url("../../img/icon-right-arrow-verylong.svg");
+      background-image: url("../img/icon-right-arrow-verylong.svg");
     }
 
     &:active {
@@ -270,7 +270,7 @@
       width: 70px;
       height: 97px;
 
-      background-image: url("../../img/icon-cat-slim.svg");
+      background-image: url("../img/icon-cat-slim.svg");
       background-repeat: no-repeat;
     }
 
@@ -281,7 +281,7 @@
       width: 134px;
       height: 56px;
 
-      background-image: url("../../img/icon-cat-pro.svg");
+      background-image: url("../img/icon-cat-pro.svg");
       background-repeat: no-repeat;
     }
   }
