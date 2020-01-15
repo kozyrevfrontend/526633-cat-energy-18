@@ -109,4 +109,4 @@ gulp.task("copy", function() {
 });
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "javascript"));
-gulp.task("start", gulp.series("build","server"));
+gulp.task("start", gulp.series("build", "server"));
