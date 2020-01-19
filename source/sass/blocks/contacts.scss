@@ -1,5 +1,7 @@
-.contacts--index {
-  background-color: $font-color-light;
+.contacts {
+  &--index {
+    background-color: $font-color-light;
+  }
 }
 
 .contacts__wrapper {
